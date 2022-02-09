@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Lecture11 from "./11-Lecture/Lecture11";
+import Lecture12 from "./12-Lecture/Lecture12";
+import Lecture13 from "./13-Lecture/Lecture13";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <Router>
+            <div className="flex" style={{height: '100vh', flexDirection: 'column'}}>
+
+                {/*<Lecture09/>*/}
+                {/*<Lecture10/>*/}
+
+                {/*<Routes>*/}
+                {/*    <Route path="*" element={<Lecture11/>}/>*/}
+                {/*</Routes>*/}
+
+                {/*<Lecture12/>*/}
+                <Lecture13/>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

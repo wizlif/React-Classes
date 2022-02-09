@@ -1,0 +1,35 @@
+.table-bg {
+    @apply shadow overflow-hidden border-b border-gray-200 sm:rounded-lg m-8;
+}
+
+.table-spacing-1 {
+    @apply -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8;
+}
+
+.table-spacing-2 {
+    @apply py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8;
+}
+
+table {
+    @apply min-w-full divide-y divide-gray-200;
+}
+
+thead {
+    @apply bg-gray-50;
+}
+
+th {
+    @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+tbody {
+    @apply bg-white divide-y divide-gray-200;
+}
+
+td {
+    @apply px-6 py-4 whitespace-nowrap text-sm text-gray-500;
+}
+
+tbody tr:hover{
+    @apply bg-gray-200;
+}
